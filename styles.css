@@ -151,10 +151,6 @@ p {
     margin: 0 auto 100px;
 }
 
-.hero__stats {
-    
-}
-
 .hero__stats img {
     display: block;
     width: 30px;
@@ -169,6 +165,10 @@ p {
 
 .hero__stats strong {
     font-size: 3.75rem;
+}
+
+.hero__stats span {
+    color: hsl(0, 0%, 50%);
 }
 
 .attribution {
@@ -216,5 +216,32 @@ p {
 
     .hero__text {
         font-size: 1.25rem;
+    }
+
+    .hero__image {
+        margin-bottom: 120px;
+    }
+
+    .hero__stats {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__stats p {
+        flex: 1;
+    }
+
+    .hero__stats img {
+        width: auto;
+    }
+
+    .hero__stats strong {
+        font-size: 6rem;
+        line-height: 1.3;
+    }
+
+    .hero__stats span {
+        font-size: 1.5rem;
+        margin-top: 0.75rem;
     }
 }
