@@ -705,6 +705,10 @@ p {
         animation: .5s .5s slideup backwards ease-out;
     }
 
+    .slide-up-3 {
+        animation: .5s .75s slideup backwards ease-out;
+    }
+
     @keyframes slideup {
         from {
             transform: translate3d(0, 2rem, 0);
