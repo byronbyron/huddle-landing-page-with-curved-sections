@@ -30,7 +30,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
     color: var(--very-dark-cyan);
     margin-top: 0;
@@ -293,7 +294,8 @@ p {
 .footer {
     position: relative;
     margin-top: 53px;
-    padding-top: 53px;
+    padding-top: 58px;
+    padding-bottom: 24px;
     color: var(--white);
     background-color: var(--very-dark-cyan);
 }
@@ -310,13 +312,116 @@ p {
     left: 0;
 }
 
+.footer__logo {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1.625rem;
+}
+
+.footer__title {
+    font-size: 1.25rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer__text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.footer__contact {
+    font-size: 0.875rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 1.25rem;
+    padding-left: 36px;
+}
+
+.footer__contact img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.form {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.625rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625;
+    color: inherit;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s;
+}
+
+.form__btn {
+    font-weight: 700;
+    border-radius: 0.375rem;
+    border-color: var(--pink);
+    background-color: var(--pink);
+    color: var(--white);
+    width: 160px;
+    height: 48px;
+}
+
+.footer__social {
+    margin: 40px 0 0 -10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer__social a {
+    color: var(--white);
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer__social svg {
+    display: block;
+    width: 1.5rem;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    display: none;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
 }
 
 @media (min-width: 992px) {
@@ -471,12 +576,13 @@ p {
     }
 
     .section-bg-4 {
-        padding: 200px 0 285px;
+        padding: 200px 0 180px;
         text-align: center;
     }
 
     .footer {
-        
+        margin-top: 158px;
+        padding-top: 120px;
     }
 
     .footer::before {
