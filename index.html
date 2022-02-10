@@ -10,6 +10,7 @@
   <meta name="description" content="Huddle landing page with curved section">
 
   <link rel="stylesheet" href="styles.css">
+  <script src="form.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -40,7 +41,7 @@
         <div class="hero__stats">
           <p>
             <strong>
-              <img src="images/icon-communities.svg" alt="">
+              <img src="images/icon-communities.svg" alt="" width="47" height="41">
               1.4k+
             </strong>
             <span>Communities Formed</span>
@@ -48,7 +49,7 @@
 
           <p>
             <strong>
-              <img src="images/icon-messages.svg" alt="">
+              <img src="images/icon-messages.svg" alt="" width="48" height="40">
               2.7m+
             </strong>
             <span>Messages Sent</span>
@@ -61,7 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img class="section__image" src="images/illustration-grow-together.svg" alt="illustration grow together">
+            <img class="section__image" src="images/illustration-grow-together.svg" alt="illustration grow together" width="516" height="422">
           </div>
 
           <div class="col">
@@ -79,7 +80,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img class="section__image" src="images/illustration-flowing-conversation.svg" alt="illustration flowing conversation">
+            <img class="section__image" src="images/illustration-flowing-conversation.svg" alt="illustration flowing conversation" width="516" height="367">
           </div>
 
           <div class="col">
@@ -97,7 +98,7 @@
       <div class="container">
           <div class="row">
             <div class="col">
-              <img class="section__image" src="images/illustration-your-users.svg" alt="illustration your users">
+              <img class="section__image" src="images/illustration-your-users.svg" alt="illustration your users" width="516" height="389">
             </div>
 
             <div class="col">
@@ -129,9 +130,10 @@
           
           <p class="footer__text">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
 
-          <form class="form">
+          <form class="form js-form">
             <label class="sr-only" for="email">Email</label>
-            <input class="form__control" id="email" type="text" placeholder="name@example.com">
+            <input type="text" name="email" id="email" class="form__control" placeholder="name@example.com">
+            <div class="form__msg js-form-msg" style="display: none;">Check your email please</div>
             <button class="btn form__btn">Subscribe</button>
           </form>
         </div>
@@ -144,12 +146,12 @@
           <div>
             <p class="footer__contact">
               <img src="images/icon-phone.svg" alt="" width="18" height="18">
-              <span>Phone: +1-543-123-4567</span>
+              <span>Phone: <a href="tel:+15431234567">+1-543-123-4567</a></span>
             </p>
             
             <p class="footer__contact">
               <img src="images/icon-email.svg" alt="" width="20" height="16">
-              <span>example@huddle.com</span>
+              <a href="mailto:example@huddle.com">example@huddle.com</a>
             </p>
           </div>
 
@@ -162,10 +164,10 @@
       </div>
     </div>
 
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/bwalkermills">Byron</a>.
+    </div>
   </footer>
 </body>
 </html>
